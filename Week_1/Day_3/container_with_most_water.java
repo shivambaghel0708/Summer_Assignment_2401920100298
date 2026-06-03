@@ -1,0 +1,27 @@
+package Week_1.Day_3;
+
+public class container_with_most_water {
+    public int maxArea(int[] height) {
+        int left=0;
+        int right=height.length-1;
+        int maxarea=0;
+        while(left<right){
+            int width=right-left;
+            int h=Math.min(height[left],height[right]);
+            int area=width*h;
+            maxarea=Math.max(maxarea,area);
+
+            if(height[left]<height[right]){
+                left++;
+
+            }
+            else{
+            right--;
+            }
+
+        }
+
+      return maxarea;  
+    }
+    
+}
