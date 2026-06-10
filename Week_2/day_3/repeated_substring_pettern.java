@@ -1,4 +1,4 @@
-package Week_2;
+package Week_2.day_3;
 public class repeated_substring_pettern {
     ublic boolean repeatedSubstringPattern(String s) {
         int n = s.length();

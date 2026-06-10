@@ -1,4 +1,4 @@
-package Week_2;
+package Week_2.day_3;
 public class is_subsequence {
     public boolean isSubsequence(String s, String t) {
        int i=0;
