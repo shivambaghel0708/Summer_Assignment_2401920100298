@@ -12,7 +12,7 @@ package week_3.day_1;
  *     }
  * }
  */
-public class Solution {
+public class linked_list_cycle {
     public boolean hasCycle(ListNode head) {
         ListNode a=head;
         ListNode b=head;
