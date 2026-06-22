@@ -1,24 +1,19 @@
 package Week_1.Day_1;
 
 public class twosum {
+    class Solution {
     public int[] twoSum(int[] nums, int target) {
-        
-        int[] ans = new int[2];
-        int n = nums.length;
-
-        
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (nums[i] + nums[j] == target) {
-                    ans[0] = i;
-                    ans[1] = j;
-
-                    return ans;
-                }
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            int first=nums[i];
+            int second=target-first;
+            if(map.containsKey(second)) {
+                return new int[] {map.get(second),i};
             }
+             map.put(first,i);
         }
+        return new int[]{};
         
-    
-        return null; 
     }
+}
 }
